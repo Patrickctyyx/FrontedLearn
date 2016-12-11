@@ -1,3 +1,8 @@
+*{
+    margin:0;
+    padding:0;
+}
+
 #header{
     height:60px;
     background:#14191e;
@@ -14,11 +19,11 @@
     right:10px;
 }
 
-#header ur li{
+#header ul li{
     text-align:center;
 
     width:60px;
     display:block;
     float:left;
-    padding:20px 10px;
+    padding:5px 10px;
 }
