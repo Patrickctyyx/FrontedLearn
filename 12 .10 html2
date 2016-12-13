@@ -20,21 +20,21 @@
     <div class="block1">
     <h1>文章一级标题</h1>
     <h2>文章二级标题</h2>
-    <p>文章作者&nbsp;文章发表时间</p>
-    <p>很快恢复快乐是公开电话狗儿胡工看了会更快的厉害个肯定就会给客户改了哦和供热殴好人推广活动规划了深刻的回归</p><br />
+    <span class="author">文章作者&nbsp;文章发表时间</span>
+    <p>很快恢复快乐是公开电话狗儿胡工看了会更快的厉害个肯定就会给客户改了哦和供热殴好人推广活动规划了深刻的回归</p>
     <p>换行了</p>
-    <p>复合欧冠猴儿哥和我老公哈口气儿共和国偶尔为共和国和偶尔跟韩国以</p><br />
+    <p>复合欧冠猴儿哥和我老公哈口气儿共和国偶尔为共和国和偶尔跟韩国以</p>
     <p>附近欧冠的贺卡给好看是个很偶尔和购物和，<a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>发货个护士更得一，这里有个<strong>粗体字</strong>,房间诶哦我干活儿过后而过后而过后完工后</p>
     <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" />
     </div>
 
-    <div class="block2">
+    <div class="block1">
     <h1>另一篇文章一级标题</h1>
     <h2>文章二级标题</h2>
-    <p>文章作者&nbsp;文章发表时间</p>
-    <p>很快恢复快乐是公开电话狗儿胡工看了会更快的厉害个肯定就会给客户改了哦和供热殴好人推广活动规划了深刻的回归</p><br />
+    <span class="author">文章作者&nbsp;文章发表时间</span>
+    <p>很快恢复快乐是公开电话狗儿胡工看了会更快的厉害个肯定就会给客户改了哦和供热殴好人推广活动规划了深刻的回归</p>
     <p>换行了</p>
-    <p>复合欧冠猴儿哥和我老公哈口气儿共和国偶尔为共和国和偶尔跟韩国以</p><br />
+    <p>复合欧冠猴儿哥和我老公哈口气儿共和国偶尔为共和国和偶尔跟韩国以</p>
     <p>附近欧冠的贺卡给好看是个很偶尔和购物和，<a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>发货个护士更得一，这里有个<strong>粗体字</strong>,房间诶哦我干活儿过后而过后而过后完工后</p>
     <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" />
     <ul>
@@ -43,14 +43,23 @@
             <li>列表项目</li>
             <li>列表项目</li>
     </ul>
+    </div>
+    
+    <div class="block1">
     <h1>图片</h1>
-    <p>好看的图片</p>
-    <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" />
+    <dl>
+        <dt></dt>
+        <dd><span>好看的图片</span><img src="http://www.w3school.com.cn/i/eg_tulip.jpg" /></dd>        
+        <dd><span>好看的图片</span><img src="http://www.w3school.com.cn/i/eg_tulip.jpg" /></dd>
+        <dd><span>好看的图片</span><img src="http://www.w3school.com.cn/i/eg_tulip.jpg" /></dd>
+        <dd><span>好看的图片</span><img src="http://www.w3school.com.cn/i/eg_tulip.jpg" /></dd>
+    </dl>
     </div> 
-    <div class="block3">
+
+    <div class="block1">
     <h1>最后一篇文章一级标题</h1>
     <h2>文章二级标题</h2>
-    <p>文章作者&nbsp;文章发表时间</p>
+    <span class="author">文章作者&nbsp;文章发表时间</span>
     <ol>
             <li>排名1</li>
             <li>排名2</li>
@@ -68,14 +77,14 @@
                     <td>表内容单元格</td>
                     <td><a href="http://www.jnugeek.cn">操作</a></td>
             </tr>
-            <tr>
+            <tr class="bottomtr">
                     <td>总计</td>
                     <td colspan="2">1000</td>
             </tr>
     </table>
     </div>
 
-    <div class="block4">
+    <div class="block2">
     <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
     <h2>侧栏注册窗口标题</h2>
     <p>请输入邮箱地址:<input type="text" placeholder="这是一个输入文本框" /></p>
@@ -85,6 +94,7 @@
             <option value="2">上海</option>
     </select>爱好：<input type="checkbox" name="sport">&nbsp;运动&nbsp;<input type="checkbox" name="sport">艺术&nbsp;个人描述：<textarea cols="10" rows="2">这是一个多行输入框</textarea><input type="submit" value="确认提交"></p>
     </div>
+    
     <footer>
             版权所有:&copy;
     </footer>
