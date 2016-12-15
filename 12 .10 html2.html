@@ -89,15 +89,21 @@
         <h2>侧栏注册窗口标题</h2>
         <form action="/api/guest/" method="post">
             <div>
-                <label for="email">请输入邮箱地址:</label>
-                <input type="text" name="email" id="email" placeholder="这是一个输入文本框" />
-                <br />
-                <label for="passwd">请输入密码:</label>
-                <input type="password" name="passwd" id="passwd" placeholder="这是一个文本输入框" />
+                <div>
+                    <label class="tips" for="email">请输入邮箱地址：</label>
+                    <input type="text" name="email" id="email" placeholder="请输入邮箱地址" />
+                    <p>邮箱地址请按要求格式输入</p>
+                </div>
+
+                <div>
+                    <label class="tips" for="passwd">请输入密码：</label>
+                    <input type="password" name="passwd" id="passwd" placeholder="请输入密码" />
+                    <p>密码请为6-16位英文数字</p>
+                </div>
             </div>
 
             <div>
-                <label>性别：</label>
+                <label class="tips">性别：</label>
                 <input type="radio" name="gender" id="male" value="male">
                 <label for="male">男</label>
                 <input type="radio" name="gender" id="female" value="female">
@@ -105,7 +111,7 @@
             </div>
 
             <div>
-                <label>城市：</label>
+                <label class="tips">城市：</label>
                 <select>
                     <option value="1" selected="selected">北京</option>
                     <option value="2">上海</option>
@@ -113,16 +119,16 @@
             </div>
 
             <div>
-                <label>爱好：</label>
-                    <input type="checkbox" name="sport" />&nbsp;运动&nbsp;
-                    <input type="checkbox" name="sport" />艺术&nbsp;
+                <label class="tips">爱好：</label>
+                    <input type="checkbox" name="sport" />运动
+                    <input type="checkbox" name="sport" />艺术
             </div>
 
             <div>
-                <label>个人描述：</label>
+                <label class="tips">个人描述：</label>
                     <textarea cols="50" rows="5">这是一个多行输入框</textarea>
             </div>
-            <input type="submit" value="确认提交"></p>
+            <input class="button" type="submit" value="确认提交"></p>
         </form>
     </div>
     
