@@ -1,48 +1,55 @@
+/*作用于全局*//*****************************/
 *{
-    /*作用于全局*/
-    margin:0;
-    padding:0;
+    margin:0;  /*margin是外边距，盒子模型最外面的*/
+    padding:0;  /*padding是内边距，盒子模型内部的*/
 }
 
-#header{
-    height:60px;
-    background:#14191e;
+/*头部导航栏*//*****************************/
+#header{  /*先定义整体，这部分并没有定义竖直方向的居中*/
+    height:60px;  /*高度为60px*/
+    background:#14191e;  /*背景颜色，默认是白色*/
 }
 
-#header h1 img{
-    padding-left:20px;
-    height:58px;
+#header h1 img{  /*再来定义图片logo的*/
+    padding-left:20px;  /*图片左边留20px的距离*/
+    height:58px;  /*高度定为58px，这样不至于挤在一起*/
 }
 
-#header ul{
-    position:absolute;
-    top:0;
-    right:10px;
+#header ul{  /*定义序列*/
+    position:absolute;  /*绝对定位*/
+    top:0;  /*和最顶部不留空隙*/
+    right:10px;  /*和最右边留10px*/
 }
 
-#header ul li{
-    text-align:center;
-
-    width:60px;
-    display:block;
-    float:left;
-    padding:5px 10px;
+#header ul li{  /*序列中的每个元素*/
+    text-align:center;  /*居中对齐*/
+    width:60px;  /*宽度*/
+    display:block;  /*设置为块状元素，方便操作*/
+    float:left;  /*相左对齐，这样就到一排显示了*/
+    padding:6px 10px;  /*外边距，相邻两个之间留点空隙*/
 }
 
-#header ul li a{
-    text-decoration:none;  /*取消链接的下划线*/
+#header ul li:hover{  /*定义鼠标放上去的动作*/
+    border-bottom:1px solid white;  /*底部出现白色条状*/
+    background:#474747;  /*背景颜色也有一些改变*/
+    border-radius:3px;  /*边界半径，四边的圆角**************/
+}
+
+#header ul li a{  /*链接的处理*/
+    text-decoration:none;  /*取消链接的下划线***********/
     color:white;
 }
 
+/*内容主体*//******************/
 .block1, .block2{
-    margin:30px;
-    padding:20px;
+    margin:30px;  /*每一篇文章外边距都为30px*/
+    padding:20px;  /*内边距为20px*/
     background:white;
-    box-shadow:1px 1px 2px 1px #848484;
+    box-shadow:1px 1px 2px 1px #848484;  /*设置阴影*/
 }
 
 .block1 h1, .block2 h1{
-    padding:5px 0;
+    padding:5px 0;  /*内边距*/
 }
 
 .block1 h2, .block2 h2{
@@ -51,13 +58,13 @@
 }
 
 .author{
-    line-height:30px;
     color:#808080;
+    line-height:30px;  /*行高，让页面不那么挤*/
     font-size:16px;
 }
 
 .block1 p, .block2 p{
-    text-indent:2em;
+    text-indent:2em;  /*缩进，注意是2em*/
 }
 
 .block1 img{
@@ -65,21 +72,21 @@
 }
 
 .block1 ul li{
-    list-style-type:none;  /*去掉前面的点*/
+    list-style-type:none;  /*去掉前面的点，之前那个是变成block点就自动没了************/
 }
 
-.block1 ol li{
-    margin:10px 40px;
+.block1 ol li{  /*为下面的有序列表准备的*/
+    margin:10px 40px;  /*这样就不会顶到格子了*/
 }
 
-.block1 dl dd{
+.block1 dl dd{  /*这个是块状元素，可以设置样式*/
     width:120px;
     margin:15px;
-    border:1px solid #ccc;
+    border:1px solid #ccc;  /*终于设置边框了，分别是宽度，样式，颜色*/
 }
 
 .block1 dl dd span{
-    display:block;
+    display:block;  /*设置成块状元素就可以添加相应的内容了*/
     font-size:12px;
     text-align:center;
     margin:5px;
@@ -92,7 +99,7 @@
 
 .block1 table{
     width:100%;
-    border-collapse:collapse;
+    border-collapse:collapse;  /*合并边框，本来是每个单元格都有边框的，现在合并到了一起*******/
 }
 
 .block1 table tr th{
@@ -120,13 +127,13 @@
 .tips{
     float:left;
     text-align:right;
-    width:35%;
+    width:35%;  /*调整水平的位置*/
     padding-right:15px;
 }
 
 .block2 form div p{
-    position:relative;
-    right:2em;
+    position:relative;  /*这部分位置是以上面的那个为标准*/
+    right:2em;  /*为了和上面的对齐*/
     margin-left:15px;
     padding-left:15px;
     font-size:12px;
@@ -141,7 +148,7 @@ textarea{
 .button{
     width:100%;
     height:40px;
-    border-radius:10px;
+    border-radius:10px;  /*尖角变成圆角*/
     background:#128fdc;
     color:white;
     font-size:19px;
@@ -149,13 +156,13 @@ textarea{
 }
 
 .button:hover{
-    background:#0063dc;
+    background:#0063dc;  /*设置一个简单的悬浮效果*/
 }
 
 footer{
     width:100%;
     height:50px;
-    background:black;
+    background:#14191e;
     color:white;
     text-align:center;
     line-height:50px;  /*一行只有50px于是自然就居中了*/
