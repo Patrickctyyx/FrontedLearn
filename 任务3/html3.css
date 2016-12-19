@@ -1,4 +1,67 @@
-*{
+body{
+    margin: 0px;
+    padding: 20px;
+    font-family: "微软雅黑";
+    font-size: 15px;
+}
+
+.main{
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #999;
+    background: #eee;
+    min-width: 600px;  /*页面的最小宽度*/
+    overflow: auto;  /*页面被压缩的时候才有用*/
+ }
+
+.left{
     padding:20px;
-    background:#eee;
+    border:1px solid #999;
+    width:160px;
+    float:left;
+    background: #fff;
+ }
+
+.left .pic{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.teamname{  /*不知道怎么了换行问题就解决了*/
+    float: left;
+    margin-left: 20px;
+    width: 60px;
+    text-align: center;
+}
+
+.right{
+    width: 120px;
+    float: right;
+    background: #fff;
+    border: 1px solid #999;
+}
+
+.right .pic{
+    width: 80px;
+    height: 80px;
+    display: block;  /*变成块状元素之后就不会有间距不均匀了*/
+    margin: 20px;
+    border: 1px solid #999;
+}
+
+.middle{
+    padding: 20px;
+    margin-left: 220px;
+    margin-right: 140px;  /*这两个设置的相当暴力...不过毕竟左右两边的都不用动*/
+    background: #fff;
+    border: 1px solid #999;
+}
+
+.middle h2{
+    margin: 0px;
+}
+
+.middle p{
+    text-indent: 2em;
 }

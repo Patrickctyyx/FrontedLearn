@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" />  
     <title>Patrick v3</title>
     <link href="html3.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -11,20 +11,34 @@
 
 <div class="main">
     <div class="left">
-        <img src="../pic.jpg">
-        <p>Patrick</p>
-    </div>
-
-    <div class="middle">
-        <p>我是Patrick</p>
+        <img class="pic" src="../pic.jpg" />
+        <div class="teamname">Patrick的名字太长了一行写不下</div>
     </div>
 
     <div class="right">
-        <span><img src="../pic.jpg"></span>
-        <span><img src="../pic.jpg"></span>
-        <span><img src="../pic.jpg"></span>
-        <span><img src="../pic.jpg"></span>
+        <img class="pic" src="../pic.jpg" />
+        <img class="pic" src="../pic.jpg" />
+        <img class="pic" src="../pic.jpg" />
+        <img class="pic" src="../pic.jpg" />
     </div>
+
+    <div class="middle">
+        <h2>从头开始学前端的Patrick</h2>
+        <h3>这次任务的一些坑</h3>
+        <p>
+          首先HTML各个块的顺序一定不能错，我一开始就是把right写在后面，middle写在前面，结果由于float布局是根据文档流的形式，right部分对其到下面去了，而把二者的顺序改过来就一点问题都没了。
+        </p>
+        <p>
+          另外改了之后各种奇怪的问题都就此消失了，比如换不了行的名字...以及不能自动根据最长的来调整长度的main块...总之好玄学呀...
+        </p>
+        <h3>
+          我想吐槽
+        </h3>
+        <p>
+          生无可恋，这样一个简单的页面足足写了一下午一晚上...其中各种玄学的错误...果然HTML我还是稍作了解就好么...是不是应该开始学JS了...有些迷茫呀...
+        </p>
+    </div>
+
 </div>
 
 </body>
