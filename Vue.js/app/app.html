@@ -1,5 +1,23 @@
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue app</title>
+    </head>
+        
+    <body>
+        <div id="app">
+            <p>{{ message }}</p>
+            <!-- 将 message 与表单动态绑定 -->
+            <input type="text" v-model="message"/>
+        </div>
+    </body>
 
-<div id="app">
-    <p>{{ message }}</p>
-</div>
+    <script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
+    <script src="app.js"></script>
+</html>
+
+
+
+
+
