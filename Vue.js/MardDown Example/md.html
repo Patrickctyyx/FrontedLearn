@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue Markdown Editor</title>
+        <link rel="stylesheet" type="text/css" href="md.css">
+    </head>
+        
+    <body>
+        <div id="editor">
+            <textarea :value="input" @input="update"></textarea>
+            <div v-html="compiledMarkdown"></div>
+        </div>     
+    </body>
+
+    <script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+    <script src="https://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="md.js"></script>
+
+</html>
