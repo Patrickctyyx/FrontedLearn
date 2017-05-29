@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue app 7</title>
+    </head>
+        
+    <body>
+        <div id="app-7"><ol>
+            <!-- todo-item 是自定义的组件，在 js 中定义 -->
+            <!-- v-bind 是把 item 作为参数传入模板中 -->
+            <todo-item v-for="item in lessons" v-for="sc in scores" v-bind:todo="item", v-bind:sc="score"></todo-item>
+        </ol></div>
+    </body>
+
+    <script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
+    <script src="app7.js"></script>
+</html>
