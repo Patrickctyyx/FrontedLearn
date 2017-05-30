@@ -9,7 +9,8 @@
         <div id="app-7"><ol>
             <!-- todo-item 是自定义的组件，在 js 中定义 -->
             <!-- v-bind 是把 item 作为参数传入模板中 -->
-            <todo-item v-for="item in lessons" v-for="sc in scores" v-bind:todo="item", v-bind:sc="score"></todo-item>
+            <!-- v-for 里面似乎不能多对多 -->
+            <todo-item v-for="item in lessons" :key="item.text" v-bind:todo="item"></todo-item>
         </ol></div>
     </body>
 

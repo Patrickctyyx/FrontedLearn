@@ -2,7 +2,7 @@
 Vue.component('todo-item', {
     // props中的内容相当于可以传入的参数
     props: ['todo', 'score'],
-    template: '<li>{{ todo.text: score.text }}</li>'
+    template: '<li>{{ todo.text }}: {{ todo.score }}</li>'
 })
 
 var app7 = new Vue({
